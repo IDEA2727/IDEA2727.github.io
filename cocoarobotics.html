@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หุ่นยนต์ตรวจสอบความสุกของผลโกโก้</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        function navigateTo(page) {
+            document.getElementById('content').innerHTML = document.getElementById(page).innerHTML;
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <header class="bg-green-700 text-white p-5">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">หุ่นยนต์ตรวจสอบความสุกของผลโกโก้</h1>
+            <nav class="flex space-x-6">
+                <a href="#" onclick="navigateTo('homeContent')" class="hover:text-yellow-300">หน้าแรก</a>
+                <a href="#" onclick="navigateTo('aboutContent')" class="hover:text-yellow-300">เกี่ยวกับระบบ</a>
+                <a href="#" onclick="navigateTo('inspectionContent')" class="hover:text-yellow-300">การตรวจสอบ</a>
+                <a href="#" onclick="navigateTo('contactContent')" class="hover:text-yellow-300">ติดต่อเรา</a>
+            </nav>
+        </div>
+    </header>
+
+    <div id="content">
+        <div id="homeContent" class="text-center py-20">
+            <h2 class="text-5xl font-bold">เพิ่มประสิทธิภาพการเก็บเกี่ยวด้วย AI</h2>
+            <p class="mt-4 text-gray-600 max-w-3xl mx-auto">ระบบอัจฉริยะที่ช่วยตรวจสอบระดับความสุกของผลโกโก้ ทำให้เกษตรกรสามารถเก็บเกี่ยวในเวลาที่เหมาะสมที่สุด</p>
+            <div class="mt-6">
+                <img src="your-hero-image.jpg" alt="หุ่นยนต์ตรวจโกโก้" class="mx-auto w-full max-w-4xl rounded-lg shadow-lg">
+            </div>
+            <button onclick="navigateTo('inspectionContent')" class="mt-8 bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-600">เริ่มต้นการตรวจสอบ</button>
+        </div>
+    </div>
+
+    <div id="aboutContent" class="hidden py-20 text-center">
+        <h2 class="text-3xl font-bold">เกี่ยวกับระบบ</h2>
+        <p class="mt-4 text-gray-600 max-w-3xl mx-auto">เราใช้กล้องความละเอียดสูงและโมเดล AI เพื่อตรวจจับระดับความสุกของผลโกโก้แบบเรียลไทม์ พร้อมทั้งให้ข้อมูลเชิงลึกในการจัดการสวนของคุณ</p>
+    </div>
+
+    <div id="inspectionContent" class="hidden py-20 text-center">
+        <h2 class="text-3xl font-bold">การตรวจสอบผลโกโก้</h2>
+        <p class="mt-4 text-gray-600">ตรวจสอบสถานะล่าสุดของผลโกโก้ในสวนของคุณ</p>
+        <table class="mt-6 w-full max-w-4xl mx-auto bg-white shadow-lg rounded-lg">
+            <thead>
+                <tr class="bg-green-500 text-white">
+                    <th class="p-4">รหัส</th>
+                    <th class="p-4">ระดับความสุก</th>
+                    <th class="p-4">วันที่ตรวจสอบ</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="border-b hover:bg-gray-100">
+                    <td class="p-4">001</td>
+                    <td class="p-4">สุกพร้อมเก็บ</td>
+                    <td class="p-4">2025-03-04</td>
+                </tr>
+                <tr class="border-b hover:bg-gray-100">
+                    <td class="p-4">002</td>
+                    <td class="p-4">ยังไม่สุก</td>
+                    <td class="p-4">2025-03-04</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="contactContent" class="hidden py-20 text-center">
+        <h2 class="text-3xl font-bold">ติดต่อเรา</h2>
+        <p class="mt-4 text-gray-600">หากคุณมีข้อสงสัยหรือต้องการข้อมูลเพิ่มเติม ติดต่อเราผ่านอีเมล</p>
+        <a href="mailto:support@cocoaai.com" class="mt-4 text-green-500 hover:underline">support@cocoaai.com</a>
+    </div>
+
+    <footer class="bg-green-700 text-white text-center p-5">
+        &copy; 2025 ระบบหุ่นยนต์ตรวจสอบความสุกของผลโกโก้
+    </footer>
+</body>
+</html>
